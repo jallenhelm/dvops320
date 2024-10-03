@@ -1,6 +1,4 @@
-# Creating the README file as requested.
-readme_content = """
-# Idle Mining Game & Pixel Art Website
+# Idle Game & Pixel Art Website
 
 This project features a **fun and interactive idle mining game** alongside a **pixel-art-themed homepage**. The goal of the mining game is to collect resources, upgrade mining abilities, and manage money, while the website provides an engaging and modern design with SEO optimization and a layered animated background.
 
