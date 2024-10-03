@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idle Mining Game</title>
+    <link rel="stylesheet" href="idleMiner/style.css" />
+  </head>
+  <body>
+    <header class="header">
+        <h1>Welcome to Idle Miner WIP!</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="animated-bg"></div>
+        <div class="bg-layer layer1"></div>
+        <div class="bg-layer layer2"></div>
+        <div class="bg-layer layer3"></div>
+        <div class="bg-layer layer4"></div>
+        <div class="bg-layer layer5"></div>
+    </div>
+
+    <div class="resources">
+      <h2>Resources</h2>
+      <p>Money: <span id="money">0</span></p>
+      <button id="sell-all">Sell All Ores</button>
+    </div>
+
+    <div class="ore-section">
+      <h2>Ores</h2>
+      <!-- Ore Containers -->
+      <div id="ore-1" class="ore">
+        <img src="src/assets/ores/ore1.png" alt="Ore 1" />
+        <div class="progress-bar">
+          <div id="ore1-progress" class="progress"></div>
+        </div>
+        <p>Collected: <span id="ore1-collected">0</span></p>
+        <button id="ore1-lvl-up">
+          Level Up (Cost: <span id="ore1-lvl-up-cost">10</span>)
+        </button>
+      </div>
+
+     <!-- <div id="ore-2" class="ore">
+        <img src="src/assets/ores/ore2.png" alt="Ore 2" />
+        <div class="progress-bar">
+          <div id="ore2-progress" class="progress"></div>
+        </div>
+        <p>Collected: <span id="ore2-collected">0</span></p>
+        <button id="ore2-lvl-up" class="">
+          Unlock (Cost: <span id="ore2-lvl-up-cost">50</span>)
+        </button>
+      </div>
+
+       <div id="ore-3" class="ore locked">
+        <img src="src/assets/ores/ore3.png" alt="Ore 3" />
+        <div class="progress-bar">
+          <div id="ore3-progress" class="progress"></div>
+        </div>
+        <p>Collected: <span id="ore3-collected">0</span></p>
+        <button id="ore3-lvl-up" class="locked">
+          Unlock (Cost: <span id="ore3-lvl-up-cost">100</span>)
+        </button>
+      </div>
+
+      <div id="ore-4" class="ore locked">
+        <img src="src/assets/ores/ore4.png" alt="Ore 4" />
+        <div class="progress-bar">
+          <div id="ore4-progress" class="progress"></div>
+        </div>
+        <p>Collected: <span id="ore4-collected">0</span></p>
+        <button id="ore4-lvl-up" class="locked">
+          Unlock (Cost: <span id="ore4-lvl-up-cost">500</span>)
+        </button>
+      </div> -->
+    </div>
+
+    <script src="idleMiner/idleMinerScripts.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+.header {
+    background-color: #404040;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid #6b6b6b;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 18px;
+}
+
+.nav-list a:hover {
+    color: #ffa07a;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.resources {
+  margin: 20px;
+  background-color: grey;
+  opacity: 0.9;
+}
+
+.resources, .ore-section {
+  margin: 20px;
+}
+
+.ore {
+  display: inline-block;
+  margin: 20px;
+  background-color: grey;
+}
+
+img {
+  width: 100px;
+}
+
+.progress-bar {
+  width: 100px;
+  height: 10px;
+  background-color: #ddd;
+  margin-top: 10px;
+  border: 1px solid #000;
+}
+
+.progress {
+  height: 100%;
+  background-color: #76c7c0;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+button.unlock {
+  background-color: #4CAF50; /* Green for unlock button */
+  color: white;
+}
+
+.locked {
+  opacity: 0.5;
+  pointer-events: none !important;
+}
+
+button.locked {
+  background-color: #ccc; /* Greyed out level-up button when ore is locked */
+  pointer-events: none;
+}
+
+/* Background Animation Container */
+#animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; /* Keep it behind the content */
+}
+
+.bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: moveLayer 10s infinite alternate;
+    z-index: -1;
+}
+
+/* Animation for moving background layers */
+@keyframes moveLayer {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Adjust for a Parallax Effect */
+.layer1 { animation: moveLayer 20s infinite alternate ease-in-out; }
+.layer2 { animation: moveLayer 18s infinite alternate ease-in-out; }
+.layer3 { animation: moveLayer 16s infinite alternate ease-in-out; }
+.layer4 { animation: moveLayer 14s infinite alternate ease-in-out; }
+.layer5 { animation: moveLayer 12s infinite alternate ease-in-out; }
+
+@media (max-width: 768px) {
+    .nav-list li {
+        margin: 0 5px;
+    }
+}
