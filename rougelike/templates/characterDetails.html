@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Pixel Art Fun, its goals, and offerings.">
+    <title>Pixel Art Fun - Character Display</title>
+    <link rel="stylesheet" href="../../rougelike/styles.css">
+</head>
+<body>
+ 
+ <div class="character-info">
+      <div class="character-details">
+        <h3>Name: ${character.name}</h3>
+        <p>Race: ${character.race}</p>
+        <p>Class: ${character.class}</p>
+      </div>
+      <div class="character-image">
+        <img src="${character.profile_img}" alt="${character.name} Image" />
+      </div>
+    </div>
+    <h4>Stats:</h4>
+    <ul>
+        <li>HP: ${character.stats.hp}</li>
+        <li>Strength: ${character.stats.str}</li>
+        <li>Dexterity: ${character.stats.dex}</li>
+        <li>Vitality: ${character.stats.vit}</li>
+    </ul>
+    <h4>Equipment:</h4>
+    <ul>
+        <li>Right Hand: ${
+          character.equipment.rightHand.itemName || "Empty"
+        } (Damage: ${character.equipment.rightHand.damage || "N/A"})</li>
+        <li>Left Hand: ${
+          character.equipment.leftHand.itemName || "Empty"
+        } (Defense: ${character.equipment.leftHand.defense || "N/A"})</li>
+        <li>Head: ${character.equipment.head.itemName || "Empty"} (Defense: ${
+    character.equipment.head.defense || "N/A"
+  })</li>
+        <li>Chest: ${character.equipment.chest.itemName || "Empty"} (Defense: ${
+    character.equipment.chest.defense
+  })</li>
+        <li>Back: ${character.equipment.back.itemName || "Empty"} (Defense: ${
+    character.equipment.back.defense || "N/A"
+  })</li>
+        <li>Legs: ${character.equipment.legs.itemName || "Empty"} (Defense: ${
+    character.equipment.legs.defense
+  })</li>
+        <li>Boots: ${character.equipment.boots.itemName || "Empty"} (Defense: ${
+    character.equipment.boots.defense || "N/A"
+  })</li>
+    </ul>
+
+        </body>
+</html>

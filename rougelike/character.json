@@ -1,0 +1,44 @@
+{
+  "character": {
+    "profile_img": "../src/assets/Aragorn.png",
+    "name": "Aragorn",
+    "race": "Human",
+    "class": "Warrior",
+    "stats": {
+      "hp": 100,
+      "str": 18,
+      "dex": 12,
+      "vit": 15
+    },
+    "equipment": {
+      "rightHand": {
+        "itemName": "Steel Sword",
+        "damage": 12
+      },
+      "leftHand": {
+        "itemName": "Wooden Shield",
+        "defense": 8
+      },
+      "head": {
+        "itemName": null,
+        "defense": 0
+      },
+      "chest": {
+        "itemName": "Leather Armor",
+        "defense": 10
+      },
+      "back": {
+        "itemName": null,
+        "defense": 0
+      },
+      "legs": {
+        "itemName": "Chain Leggings",
+        "defense": 7
+      },
+      "boots": {
+        "itemName": null,
+        "defense": 0
+      }
+    }
+  }
+}
