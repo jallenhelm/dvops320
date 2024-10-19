@@ -5,17 +5,6 @@ import SubmissionList from '../Components/SubmissionList';
 
 
 function ChallengePage() {
-    
-  const [response, setResponse] = useState('');
-
-  const handleChange = (e) => {
-    setResponse(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Your response: ' + response);
-  };
 
   return (
     <div className="ChallengePage">
