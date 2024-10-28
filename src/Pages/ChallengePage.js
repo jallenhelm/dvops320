@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import WritingArea from '../Components/WritingArea';
 import ChallengeDisplay from '../Components/ChallengeDisplay';
 import SubmissionList from '../Components/SubmissionList';
