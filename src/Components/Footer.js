@@ -30,6 +30,11 @@ const Footer = () => {
               Daily Challenge
             </Link>
           </li>
+          <li>
+            <Link to="/leaderboard" class="nav-link" aria-current="page">
+              Leaderboard
+            </Link>
+          </li>
           <li class="nav-item">
             <Link to="/profile" class="nav-link px-2 text-body-secondary">
               Profile
